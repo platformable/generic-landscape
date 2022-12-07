@@ -9,7 +9,7 @@ export default function land2({data}) {
 
 export async function getServerSideProps(context) {
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}` || `http://localhost:5000`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}`);
   
     const data = await res.json();
   
